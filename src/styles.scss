@@ -135,6 +135,7 @@ body {
   background-color: #d1d5db; /* Tailwind's gray-300 */
   border-radius: 2px;
   transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
 .swiper-pagination-bullet-active {

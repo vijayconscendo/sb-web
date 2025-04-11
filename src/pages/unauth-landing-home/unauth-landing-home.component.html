@@ -1,4 +1,8 @@
 <app-unauth-banner></app-unauth-banner>
+<div *ngIf="isBrowser">
+  <app-icon-text-carousel></app-icon-text-carousel>
+
+</div>
 <div class="component-container">
     <div class="component-space-y">
         <app-content-image-split title="Your business is our top priority"

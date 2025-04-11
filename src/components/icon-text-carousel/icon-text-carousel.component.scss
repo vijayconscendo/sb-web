@@ -8,7 +8,7 @@
 .custom-carousel{
     .slide{
         background-color: #FFFFFF;
-        border: 1px solid #CED3D9;
+        border: 1px solid #CED3D9;border-radius: 0.625rem;
         padding: 30px 10px; height: 215px; text-align: center;
         display: flex; align-items: center; justify-content: center; flex-direction: column;
         img{
@@ -31,54 +31,31 @@
     }
 }
 
-.custom-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  
-    .nav-btn {
-      background: #333;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      font-size: 18px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  }
-
-  .custom-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  
-    span {
-      height: 12px;
-      width: 12px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      margin: 0 4px;
-      cursor: pointer;
-  
-      &.active {
-        background-color: #333;
-      }
-    }
-  }
 
 
-  .custom-dots button {
-    background-color: #ccc;
-    border: none;
-    padding: 5px 10px;
-    margin: 0 4px;
-    cursor: pointer;
-    border-radius: 4px;
+// Custom Carousel Controls
+.custom-controls{
+  width: 100%;display: flex; align-items: center; justify-content: center; margin-top: 2.5rem;
+}
+
+.custom-navigation {
+  display: flex; justify-content: center; align-items: center;gap: 15px;
+}
+.custom-pagination {
+  display: flex; align-items: center; gap: 5px;
+  span{
+    display: inline-block;width: 30px;height: 3px;
+    background-color: #5C6C80;border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
-  
-  .custom-dots button.active {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
+}
+
+.custom-prev,
+.custom-next {
+  background: none;border: none;cursor: pointer;
+}
+
+
+@media screen and (max-width:680px) {
+  .custom-prev, .custom-next { display: none;}
+}

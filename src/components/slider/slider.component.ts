@@ -18,9 +18,10 @@ export class SliderComponent implements AfterViewInit {
 
     // Swiper parameters
     const swiperParams: SwiperOptions = {
-      slidesPerView: 1,
+      // slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      centeredSlides: true,
       // Connect to external elements
       pagination: {
         el: '.custom-pagination',
@@ -29,6 +30,14 @@ export class SliderComponent implements AfterViewInit {
       navigation: {
         nextEl: '.custom-next',
         prevEl: '.custom-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 7,
+        },
       },
     };
 
