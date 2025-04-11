@@ -5,9 +5,9 @@ import { HistoryAndStatementsComponent } from '../pages/history-and-statements/h
 import { CarouselTestComponent } from '../pages/carousel-test/carousel-test.component';
 
 export const routes: Routes = [
-  { path: 'unauth-landing', component: UnauthLandingHomeComponent }, // Unauthenticated landing page
-  { path: 'unauth-solutions', component: UnauthSolutionsComponent }, // Unauthenticated landing page
-  { path: 'history-statements', component: HistoryAndStatementsComponent }, // Unauthenticated landing page
+  { path: '', component: UnauthLandingHomeComponent }, // Unauthenticated landing page
+  { path: 'our-solutions', component: UnauthSolutionsComponent }, // Unauthenticated landing page
+  { path: 'dashboard', component: HistoryAndStatementsComponent }, // Unauthenticated landing page
   { path: 'carousel-test', component: CarouselTestComponent },
-  { path: '**', redirectTo: 'unauth-landing' }, // Redirect unknown routes
+  { path: '**', redirectTo: '' }, // Redirect unknown routes
 ];

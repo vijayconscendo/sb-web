@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MegaMenuService } from '../../services/mega-menu.service';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-sb-header',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './sb-header.component.html',
   styleUrl: './sb-header.component.scss'
 })

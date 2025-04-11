@@ -1,7 +1,9 @@
 <div class="page-container">
     <div class="component-container-two">
         <app-welcome-user-banner></app-welcome-user-banner>
-        <app-my-solutioncards></app-my-solutioncards>
+        <div *ngIf="isBrowser">
+            <app-my-solutioncards></app-my-solutioncards>
+        </div>
     </div>
     <div class="component-container-two mt-5">
         <div class="container-fluid px-0">
