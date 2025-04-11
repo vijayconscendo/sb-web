@@ -1,0 +1,56 @@
+.sol-cards-container{
+    .heading-title{
+        font-family: "BSP-Bold", sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.3;
+        color: #0033AA;
+        margin-bottom: 1rem;
+    }
+}
+.sol-cards-grid{
+    padding: 1.5rem; background-color: #FFFFFF; border-radius: 1rem;
+}
+.sol-card{
+    padding: 1rem; background-color: #0062E1; border-radius: 0.5rem; width: 100%; max-width: 322px;
+}
+
+.sol-header{
+    display: flex; align-items: center; gap: 4px;
+    h5{
+        font-family: "BSP-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 1.3;
+        color: #FFFFFF;
+        margin-bottom: 4px;
+    }
+    p{
+        font-family: "BSP-Regular", sans-serif;
+        font-size: 0.6375rem;color: #FFFFFF;
+        line-height: 1.3; margin: 0;
+    }
+}
+.sol-body{
+    padding: 1rem 0;
+    border-bottom: 1px solid #E3E6EA;
+    span{
+        font-family: "BSP-Regular", sans-serif;
+        font-size: 0.6375rem;
+        line-height: 1.3; color: #FFFFFF;
+        display: block; margin-bottom: 0.25rem;
+    }
+    h3{
+        font-family: "BSP-Medium", sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.3; color: #FFFFFF;
+        margin-bottom: 0;
+    }
+}
+
+.transact-btn{
+    margin-top: 1rem;
+    font-family: "BSP-Bold", sans-serif;
+    font-size: 0.875rem;
+    line-height: normal;
+    text-align: center;
+    padding: 10px 12px; border-radius: 8px;
+}

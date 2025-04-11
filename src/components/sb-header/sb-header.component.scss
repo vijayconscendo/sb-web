@@ -1,0 +1,47 @@
+.sb-header{
+    background: #0033AA;
+    box-shadow: 0px 4.17px 4.17px 0px #00000040;
+    padding: 13px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.logo .isMobile{display: none;}
+.right-block{
+    position: relative;display: flex; align-items: center; padding-left: 40px;
+    &::before{
+        content: ''; display: block; height: 100%; width: 1px; background-color: #BFDCFC; clear: both; position: absolute; left: 0; top: 0;
+    }
+}
+.mail-badge{
+    position: relative;background-color: transparent;border: none; outline: none; padding: 0; margin-right: 25px;
+    .badge-text{
+        position: absolute;
+        border-radius: 28px;
+        padding: 4px 8px;
+        background-color: #DC0A0A;
+        left: 100%; top: 0;
+        transform: translate(-50%, -50%);
+        font-family: "BSP-Regular"; font-size: 0.75rem; line-height: normal; color: #FFFFFF;
+    }
+}
+.sign-in{
+    display: inline-flex; align-items: center; justify-content: center; column-gap: 10px;
+    background-color: transparent; border: none; outline: none; padding: 0;
+    span{
+        font-family: "BSP-Medium";
+        font-size: 1.043rem;
+        line-height: 1.3;
+        color: #FFFFFF;
+        text-align: end;
+    }
+}
+
+.mega-menu-toggle{
+    border: none; background-color: transparent; padding: 0; display: none; margin-left: 16px;
+}
+
+@media screen and (max-width:768px){
+    .mega-menu-toggle{display: inline-block;}
+    .logo .isDesktop{ display: none !important; }
+    .logo .isMobile{display: inline-flex;}
+}

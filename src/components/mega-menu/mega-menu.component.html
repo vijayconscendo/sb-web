@@ -1,0 +1,152 @@
+<header class="header-menu">
+    <div class="header-container">
+         <nav class="nav-menu" [class.mobile-open]="isMobileMenuOpen">
+            <ul class="menu-list">
+            <li class="parent-li"><a href="#"><span>Home</span></a></li>
+            
+            <li class="has-megamenu parent-li" 
+                (mouseenter)="!isMobile && (activeMegaMenu = 'solutions')"
+                (mouseleave)="!isMobile && handleMouseLeave($event)">
+                <a href="/unauth-solutions" (click)="toggleAccordion('solutions', $event)">
+                <span>Our Solutions</span>
+                 <img
+                    class="img-fluid caret-icon"
+                    src="assets/images/icons/caret-down-icon.png"
+                    alt="caret"
+                  />
+                  <img
+                  class="img-fluid arrow-icon"
+                  src="assets/images/icons/arrow-down-icon.png"
+                  alt="caret"
+                />
+                </a>
+                
+                <div class="mega-menu" [class.active]="(megaMenuService.megaMenuState$ | async) === 'solutions'">
+                <button type="button" class="text-btn"><span>View all solutions</span><img class="img-fluid" src="assets/images/icons/arrow-right-icon.png" alt="arrow-right-icon"></button>
+                <div class="mega-menu-wrapper">
+                    <div class="mega-menu-container">
+                    <div class="mega-menu-column">
+                        <h3>Bank</h3>
+                        <ul>
+                            <li><a href="#">Business bank accounts</a></li>
+                            <li><a href="#">Trust accounts</a></li>
+                            <li><a href="#">Business credit cards</a></li>
+                            <li><a href="#">Foreign exchange</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mega-menu-column">
+                        <h3>Borrow</h3>
+                        <ul>
+                            <li><a href="#">Business loans</a></li>
+                            <li><a href="#">Vehicle finance</a></li>
+                            <li><a href="#">Commercial property</a></li>
+                            <li><a href="#">Specialised financing</a></li>
+                            <li><a href="#">Loan calculator</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mega-menu-column">
+                        <h3>Save & Invest</h3>
+                        <ul>
+                            <li><a href="#">Business savings and Investment accounts</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-column">
+                        <h3>Insure</h3>
+                        <ul>
+                            <li><a href="#">Your business</a></li>
+                            <li><a href="#">Loans</a></li>
+                            <li><a href="#">Corporate risk</a></li>
+                            <li><a href="#">Your  agri business</a></li>
+                            <li><a href="#">Your vehicle</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mega-menu-column">
+                        <h3>Business Solutions</h3>
+                        <ul>
+                            <li><a href="#">Workplace solutions</a></li>
+                            <li><a href="#">Specialised</a></li>
+                            <li><a href="#">Fleet management</a></li>
+                            <li><a href="#">Industry</a></li>
+                            <li><a href="#">Merchant Solutions</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </li>
+            <!-- New Services Mega Menu -->
+            <li class="has-megamenu parent-li" 
+            (mouseenter)="!isMobile && (activeMegaMenu = 'services')"
+            (mouseleave)="!isMobile && handleMouseLeave($event)">
+            <a href="#" (click)="toggleAccordion('services', $event)">
+            <span>Our Services</span>
+            <img
+                class="img-fluid caret-icon"
+                src="assets/images/icons/caret-down-icon.png"
+                alt="caret"
+            />
+            <img
+                class="img-fluid arrow-icon"
+                src="assets/images/icons/arrow-down-icon.png"
+                alt="caret"
+            />
+        </a>
+        
+            <div class="mega-menu" [class.active]="(megaMenuService.megaMenuState$ | async) === 'services'">
+                <div class="mega-menu-wrapper">
+                <div class="mega-menu-container">
+                    <div class="mega-menu-column">
+                    <h3>Financial Services</h3>
+                    <ul>
+                        <li><a href="#">Financial planning</a></li>
+                        <li><a href="#">Wealth management</a></li>
+                        <li><a href="#">Retirement planning</a></li>
+                        <li><a href="#">Estate planning</a></li>
+                    </ul>
+                    </div>
+                    
+                    <div class="mega-menu-column">
+                    <h3>Business Services</h3>
+                    <ul>
+                        <li><a href="#">Payroll services</a></li>
+                        <li><a href="#">Cash management</a></li>
+                        <li><a href="#">Treasury services</a></li>
+                        <li><a href="#">Trade finance</a></li>
+                    </ul>
+                    </div>
+                    
+                    <div class="mega-menu-column">
+                    <h3>Digital Services</h3>
+                    <ul>
+                        <li><a href="#">Online banking</a></li>
+                        <li><a href="#">Mobile banking</a></li>
+                        <li><a href="#">Payment solutions</a></li>
+                        <li><a href="#">Data analytics</a></li>
+                    </ul>
+                    </div>
+                    
+                    <div class="mega-menu-column">
+                    <h3>Advisory Services</h3>
+                    <ul>
+                        <li><a href="#">Business consulting</a></li>
+                        <li><a href="#">Industry insights</a></li>
+                        <li><a href="#">Market research</a></li>
+                        <li><a href="#">Tax planning</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </li>
+            <li class="parent-li"><a href="#"><span>Service Request</span></a></li>
+            <li class="parent-li"><a href="#"><span>Documents</span></a></li>
+        </ul>
+         </nav>
+         <div>
+            <a href="#" class="contact-us"><span>Contact Us</span></a>
+         </div>
+    </div>
+</header>

@@ -1,0 +1,46 @@
+@use "../../styles/custom-breakpoints" as bp;
+
+.hero-banner{
+    background-color: #FFFFFF;
+}
+.colLeft{
+    background-image: url("../../assets/images/banners/hero-banner-img.svg");
+    background-repeat: no-repeat; background-size: cover; background-position: center;
+
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+    .banner-content{
+        width: 100%; max-width: 420px; padding: 106px 42px 62px;
+        @include bp.respond-below('sm'){
+            padding: 80px 40px;
+        }
+        @include bp.respond-below('mobile-xxs'){
+            padding: 40px 8px; max-width: 243px;
+        }
+        h1{
+            position: relative;font-family: "BSP-Medium"; font-size: 2.5rem; line-height: 1.3; color: #FFFFFF; margin: 0;padding-bottom: 25px; max-width: 300px;
+            @include bp.respond-below('sm'){
+                font-size: 2rem;
+            }
+            @include bp.respond-below('mobile-xxs'){
+                font-size: 1.25rem;
+            }
+            &::after{
+                content: ""; display: block; height: 3px; width: 100%; background-color: #6ACFF6;clear: both; position: absolute; bottom: 0; left: 0;
+            }           
+        }
+        p{
+            font-family: "BSP-Regular"; font-size: 1.125rem; line-height: 1.3; color: #FFFFFF; margin-top: 25px; margin-bottom: 36px;
+            @include bp.respond-below('mobile-lg'){
+                font-size: 1rem;
+            }
+            @include bp.respond-below('mobile-xxs'){
+                font-size: 0.875rem;
+            }
+        }
+        .btnPrimary{background-color: #FFFFFF; color: #0062E1;}
+    }
+.colRight{
+    display: flex; align-items: flex-end; justify-content: center;
+}

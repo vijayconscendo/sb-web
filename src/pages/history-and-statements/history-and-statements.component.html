@@ -1,0 +1,120 @@
+<div class="page-container">
+    <div class="component-container-two">
+        <app-welcome-user-banner></app-welcome-user-banner>
+        <app-my-solutioncards></app-my-solutioncards>
+    </div>
+    <div class="component-container-two mt-5">
+        <div class="container-fluid px-0">
+            <div class="row g-3">
+                <div class="col-lg-8">
+                    <h2 class="heading-title">Transaction history</h2>
+                    <div class="table-container">
+                     <ng-select
+                        [items]="accounts"
+                        bindLabel="name"
+                        placeholder="Select an account"
+                        [(ngModel)]="selectedAccount"
+                        class="custom-ngs">
+                      </ng-select>
+                        <div class="custom-table">
+                            <ul class="table-header-ul">
+                                <li><span>Date</span></li>
+                                <li><span>Description</span></li>
+                                <li><span>Amount</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="danger-text">– R 100 000</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="success-text">– R 100 000</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="danger-text">– R 100 000</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="success-text">– R 100 000</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="danger-text">– R 100 000</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="success-text">– R 100 000</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="danger-text">– R 100 000</span></li>
+                            </ul>
+                            <ul class="table-body-ul">
+                                <li><span>1 Nov 2023</span></li>
+                                <li><span>Vehicle Insurance_HondaJazz 2020</span></li>
+                                <li><span class="success-text">– R 100 000</span></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="text-btn">view all</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="heading-title">Statements</h2>
+                    <div class="statement-container">
+                        <ng-select
+                        [items]="accounts"
+                        bindLabel="name"
+                        placeholder="Select an account"
+                        [(ngModel)]="selectedAccount"
+                        class="custom-ngs">
+                      </ng-select>
+                        <ul class="statement-ul">
+                            <li>
+                                <div>
+                                    <div class="statement-date"><img src="assets/images/icons/statement-icon.png" alt="download icon" class="img-fluid" /><span>1 June 2024</span></div>
+                                    <p class="statement-title">Monthly formal statement
+                                        Official bank statement</p>
+                                </div>
+                                <button type="button" class="download-btn"><img src="assets/images/icons/download-icon.png" alt="download icon" class="img-fluid" /></button>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="statement-date"><img src="assets/images/icons/statement-icon.png" alt="download icon" class="img-fluid" /><span>1 June 2024</span></div>
+                                    <p class="statement-title">Monthly formal statement
+                                        Official bank statement</p>
+                                </div>
+                                <button type="button" class="download-btn"><img src="assets/images/icons/download-icon.png" alt="download icon" class="img-fluid" /></button>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="statement-date"><img src="assets/images/icons/statement-icon.png" alt="download icon" class="img-fluid" /><span>1 June 2024</span></div>
+                                    <p class="statement-title">Monthly formal statement
+                                        Official bank statement</p>
+                                </div>
+                                <button type="button" class="download-btn"><img src="assets/images/icons/download-icon.png" alt="download icon" class="img-fluid" /></button>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="statement-date"><img src="assets/images/icons/statement-icon.png" alt="download icon" class="img-fluid" /><span>1 June 2024</span></div>
+                                    <p class="statement-title">Monthly formal statement
+                                        Official bank statement</p>
+                                </div>
+                                <button type="button" class="download-btn"><img src="assets/images/icons/download-icon.png" alt="download icon" class="img-fluid" /></button>
+                            </li>
+                        </ul>
+                        <button type="button" class="text-btn">view all</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>

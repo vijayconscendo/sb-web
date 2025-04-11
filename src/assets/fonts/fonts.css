@@ -1,0 +1,38 @@
+/* BSP */
+
+@font-face {
+  font-family: 'BSP-Regular';
+  src: url(./BentonSansPro-Regular.eot);
+  src: url(./BentonSansPro-Regular.eot?#iefix) format('embedded-opentype'),
+       url(./BentonSansPro-Regular.ttf) format('truetype'),
+       url(./BentonSansPro-Regular.woff2) format('woff2'),
+       url(./BentonSansPro-Regular.woff) format('woff'),
+       url(./BentonSansPro-Regular.otf) format('otf'),
+       url(./BentonSansPro-Regular.svg#BSP-Regular) format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BSP-Medium';
+  src: url(./BentonSansPro-Medium.eot);
+  src: url(./BentonSansPro-Medium.eot?#iefix) format('embedded-opentype'),
+       url(./BentonSansPro-Medium.ttf) format('truetype'),
+       url(./BentonSansPro-Medium.woff2) format('woff2'),
+       url(./BentonSansPro-Medium.woff) format('woff'),
+       url(./BentonSansPro-Medium.otf) format('otf'),
+       url(./BentonSansPro-Medium.svg#BSP-Medium) format('svg');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'BSP-Bold';
+  src: url(./BentonSansPro-Bold.eot);
+  src: url(./BentonSansPro-Bold.eot?#iefix) format('embedded-opentype'),
+       url(./BentonSansPro-Bold.ttf) format('truetype'),
+       url(./BentonSansPro-Bold.woff) format('woff'),
+       url(./BentonSansPro-Bold.woff2) format('woff2'),
+       url(./BentonSansPro-Bold.otf) format('otf'),
+       url(./BentonSansPro-Bold.svg#BSP-Bold) format('svg');
+  font-weight: 700;
+}
+

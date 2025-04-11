@@ -1,0 +1,50 @@
+@use "../../styles/custom-breakpoints" as bp;
+
+.add-banner{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 48px 120px;
+    background: 
+    linear-gradient(180deg, rgba(4, 3, 3, 0.58) 0%, rgba(0, 0, 0, 0.32) 53.65%, rgba(0, 0, 0, 0.57) 100%), 
+    url('/assets/images/banners/view-solutions-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     position: relative;
+     @include bp.respond-below('sm'){
+        padding: 48px;
+     }
+     @include bp.respond-below('mobile-lg'){
+        padding: 90px 48px;
+     }
+     @include bp.respond-below('mobile-md'){
+        padding: 128px 16px 90px;
+     }
+    .add-banner__content{
+        display: flex; justify-content: center; align-items: flex-start; flex-direction: column;
+        height: 100%; width: 100%; max-width: 390px;
+            h2{
+                font-family: "BSP-Regular", sans-serif; font-size: 3rem; line-height: 1.2; color: #FFFFFF; margin-bottom: 16px;
+                @include bp.respond-below('sm') {
+                    font-size: 2.375rem;
+                  }
+                @include bp.respond-below('mobile-md'){
+                    font-size: 2rem;
+                 }
+            }
+            p{
+                font-family: "BSP-Regular", sans-serif; font-size: 1.125rem; line-height: 1.5; margin-bottom: 15px; color: #FFFFFF;
+                @include bp.respond-below('mobile-xxs'){
+                    font-size: 1rem;
+                 }
+                @include bp.respond-below('mobile-xxs'){
+                    font-size: 0.875rem;
+                 }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        .btnPrimary{margin-top: 15px;}
+    }
+}

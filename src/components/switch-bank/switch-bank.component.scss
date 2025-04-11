@@ -1,0 +1,38 @@
+@use "../../styles/custom-breakpoints" as bp;
+
+.switch-bank{
+    .colLeft{
+        display: flex; flex-direction: column; justify-content: center;
+         background: linear-gradient(180deg, #0062E1 0%, #0033AA 100%);
+        .content{
+            width: 100%;max-width:432px;margin: 0 auto;padding: 40px 16px;
+            h2{
+                font-family: "BSP-Regular", sans-serif; font-size: 3rem; line-height: 1.2; color: #FFFFFF; margin-bottom: 24px;
+                @include bp.respond-below('sm') {
+                    font-size: 2.375rem;
+                  }
+                  @include bp.respond-below('mobile-xxs') {
+                    font-size: 1.75rem;
+                  }
+            }
+            p{
+                font-family: "BSP-Regular", sans-serif; font-size: 1rem; line-height: 1.5; margin-bottom: 24px; color: #FFFFFF;
+                @include bp.respond-below('mobile-xxs') {
+                  font-size: 0.875rem;
+                }
+            }
+            .btnPrimary{background-color: #FFFFFF;color: #0062E1; font-family: "BSP-Bold";max-width: 300px;
+                @include bp.respond-below('mobile-xxs') {
+                    max-width: 100%; width: 100%;
+                  }
+            }
+        }
+    }
+    .colRight{
+        .secImg{
+            height: 100%;width: 100%; min-height: 365px;
+            background-image: url("../../assets/images/media/switch-bank.png");
+            background-repeat: no-repeat; background-position: center; background-size: cover; 
+        }
+    }
+}
